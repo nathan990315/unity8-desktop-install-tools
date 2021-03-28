@@ -5,8 +5,8 @@ set -e
 
 ## Check if we are on xenial or bionic
 source /etc/os-release
-if [ $UBUNTU_CODENAME != "xenial" ] && [ $UBUNTU_CODENAME != "bionic" ]; then
-    echo "This is only supported on Ubuntu xenial and bionic"
+if [ $UBUNTU_CODENAME != "xenial" ] && [ $UBUNTU_CODENAME != "Groovy Gorilla" ]; then
+    echo "This is only supported on Ubuntu xenial and >Groovy Gorilla"
     exit 1
 fi
 
